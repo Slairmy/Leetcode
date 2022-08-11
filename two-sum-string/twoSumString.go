@@ -1,19 +1,16 @@
-package main
+package twoSumString
 
 import (
-	"fmt"
 	"strconv"
 )
 
-func addStrings(num1, num2 string) string {
+func AddStrings(num1, num2 string) string {
 
 	len1, len2 := len(num1)-1, len(num2)-1
-
 	var (
 		mod       int    = 0 // 余数
 		sumString string     // 结果字符串
 	)
-
 	for len1 >= 0 || len2 >= 0 {
 		// 流程简化
 		x, y := 0, 0
@@ -37,9 +34,4 @@ func addStrings(num1, num2 string) string {
 		sumString = strconv.Itoa(mod) + sumString
 	}
 	return sumString
-}
-
-func main() {
-	sum := addStrings("1", "9")
-	fmt.Println(sum)
 }
