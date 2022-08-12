@@ -1,6 +1,7 @@
 package main
 
 import (
+	reverseList "Leetcode/reverse-list"
 	twoSumList "Leetcode/two-sum-list"
 )
 
@@ -34,5 +35,9 @@ func main() {
 	}
 
 	twoSumList.AddTwoNumbers(n1, n4)
-
+	// 反转链表
+	head := &reverseList.ListNode{
+		Val: 1,
+	}
+	reverseList.ReverseList(head)
 }

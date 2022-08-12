@@ -18,7 +18,7 @@ func AddTwoNumbers(l1, l2 *ListNode) *ListNode {
 
 	currentNode := &ListNode{} // 这里赋值是对应的结构体指针指向,通过改指针可以访问结构体元素
 	preNode := currentNode
-	for l1 != nil && l2 != nil {
+	for l1 != nil || l2 != nil {
 		x, y := 0, 0
 		if l1 != nil {
 			x = l1.Val
