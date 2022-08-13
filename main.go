@@ -3,6 +3,8 @@ package main
 import (
 	reverseList "Leetcode/reverse-list"
 	twoSumList "Leetcode/two-sum-list"
+	twoMultString "Leetcode/two-x-string"
+	"fmt"
 )
 
 func main() {
@@ -40,4 +42,8 @@ func main() {
 		Val: 1,
 	}
 	reverseList.ReverseList(head)
+
+	// 大数相乘
+	a := twoMultString.Multiply("2", "3")
+	fmt.Println(a)
 }
