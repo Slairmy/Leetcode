@@ -2,8 +2,9 @@ package main
 
 import (
 	reverseList "Leetcode/reverse-list"
+	treeMaxDeep "Leetcode/tree_max_deep"
+	twoMultString "Leetcode/two-mult-string"
 	twoSumList "Leetcode/two-sum-list"
-	twoMultString "Leetcode/two-x-string"
 	"fmt"
 )
 
@@ -46,4 +47,16 @@ func main() {
 	// 大数相乘
 	a := twoMultString.Multiply("2", "3")
 	fmt.Println(a)
+
+	node2 := &treeMaxDeep.TreeNode{
+		Val: 2,
+	}
+	node1 := &treeMaxDeep.TreeNode{
+		Val:   1,
+		Right: node2,
+	}
+
+	// 树的最大深度
+	b := treeMaxDeep.MaxDepth(node1)
+	fmt.Println(b)
 }
